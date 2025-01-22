@@ -15,9 +15,15 @@ const SigninButton = () => {
     );
   }
   return (
-    <button onClick={() => signIn()} className="text-green-600 ml-auto">
-      Sign In
+    <div className="flex gap-4">
+
+    <button onClick={() => signIn("github")} className="text-green-600 ml-auto border-spacing-2">
+      Sign In with Github
     </button>
+    <button onClick={() => signIn("google")} className="text-green-600 ml-auto border-spacing-2">
+      Sign In with Google
+    </button>
+    </div>
   );
 };
 
